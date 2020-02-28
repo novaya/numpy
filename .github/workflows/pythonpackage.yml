@@ -19,6 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip setuptools
+        pip install --user -r test_requirements.txt
         pip install cython
         pip install .
         pip install scipy
